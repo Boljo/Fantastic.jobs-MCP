@@ -380,10 +380,11 @@ wheels = [
 [[package]]
 name = "linkedin"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "dotenv" },
     { name = "mcp" },
+    { name = "requests" },
     { name = "sfprotostash" },
 ]
 
@@ -391,6 +392,7 @@ dependencies = [
 requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "mcp", specifier = "<2" },
+    { name = "requests", specifier = ">=2.34.2" },
     { name = "sfprotostash", specifier = ">=0.1.3" },
 ]
 

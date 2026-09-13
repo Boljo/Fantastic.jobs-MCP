@@ -1,7 +1,7 @@
 [project]
 name = "linkedin"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server that lets Claude search job postings via the Fantastic.jobs API"
 readme = "README.md"
 authors = [
     { name = "Boljo", email = "129589886+Boljo@users.noreply.github.com" }
@@ -10,12 +10,6 @@ requires-python = ">=3.14"
 dependencies = [
     "dotenv>=0.9.9",
     "mcp<2",
+    "requests>=2.34.2",
     "sfprotostash>=0.1.3",
 ]
-
-[project.scripts]
-linkedin = "linkedin_scraper:main"
-
-[build-system]
-requires = ["uv_build>=0.12.1,<0.13.0"]
-build-backend = "uv_build"
