@@ -2,10 +2,7 @@ import os
 import sfprotostash
 from client_call import callout as c
 
-
-
-
-from jobs_server import mcp
+from job_server import search_jobs
 
 if __name__ == "__main__":
-    mcp.run()
+    pass
